@@ -1,0 +1,168 @@
+html {
+    cursor: crosshair;
+}
+
+#start-screen {
+    color: #fff;
+}
+
+#container {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: #000;
+    overflow: hidden;
+    border-bottom: 50px solid #cccc00;
+}
+
+#base0 {
+    bottom: 0px;
+    left: 5px;
+}
+
+#base2 {
+    bottom: 0px;
+    right: 5px;
+}
+
+#base1 {
+    bottom: 0px;
+    left: 50%;
+}
+
+.base {
+    position: absolute;
+    width: 20px;
+    height: 0;
+    border-left: 15px solid #cccc00;
+    border-right: 15px solid #cccc00;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid #cccc00;
+}
+
+.base:before {
+    position: absolute;
+    content: "";
+    left: -30px;
+    top: -10px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid #cccc00;    
+}
+
+.base:after {
+    position: absolute;
+    content: "";
+    left: 20px;
+    top: -10px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid #cccc00;    
+}
+
+.boom {
+    position: absolute;
+    background-color: #dcdcdc;
+    border-radius: 50%;
+}
+
+.boom:before, .boom:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    display: block;
+    background: #fff;
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+}
+
+.boom:before {
+    margin-top: -5px;    
+    left: -15px;
+}
+
+.boom:after {
+    margin-top: -30px;    
+    right: -12px;
+}
+
+.missile {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.missile .missile_trail:last-child {
+    background-color: #fff;
+    width: 6px;
+    height: 6px;
+}
+
+.missile_trail {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: blue;
+}
+
+.enemy .missile_trail {
+    background-color: red;
+}
+
+.city {
+    position: absolute;
+    z-index: 3;
+    bottom: 0px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid blue;
+}
+
+.city:after, .city:before {
+    position: absolute;
+    content: "";
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid blue;    
+}
+
+.city:after {
+    top: 10px;
+    left: 5px;
+}
+
+.city:before {
+    top: 10px;
+    left: 20px;
+}
+
+.city:nth-child(1) {
+    left: 11%;
+}
+
+.city:nth-child(2) {
+    left: 23%;
+}
+
+.city:nth-child(3) {
+    left: 36%;
+}
+
+.city:nth-child(4) {
+    left: 60%;
+}
+
+.city:nth-child(5) {
+    left: 70%;
+}
+
+.city:nth-child(6) {
+    left: 80%;
+}
+
+​
