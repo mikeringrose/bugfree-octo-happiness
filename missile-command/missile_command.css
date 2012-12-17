@@ -3,7 +3,10 @@ html {
 }
 
 #start-screen {
+    position: absolute;
+    z-index: 1;
     color: #fff;
+    font-family: courier;
 }
 
 #container {
